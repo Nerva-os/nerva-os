@@ -37,4 +37,4 @@ Before v2 ships, read [`../safety/constitution-template.md`](../safety/constitut
 
 ---
 
-*Nerva OS — your business and personal AI assistant.*
+*Nerva OS — your AI for everything that matters.*

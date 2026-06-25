@@ -1,6 +1,6 @@
 # Nerva OS
 
-**Your business and personal AI assistant.**
+**Your AI for everything that matters.**
 
 ---
 
@@ -50,4 +50,4 @@ Email **support@nerva-os.com** if anything doesn't install or doesn't work the w
 
 ---
 
-*Built by Nerva OS — your business and personal AI assistant.*
+*Built by Nerva OS — your AI for everything that matters.*

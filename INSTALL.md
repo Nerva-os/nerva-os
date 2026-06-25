@@ -151,4 +151,4 @@ We respond within one business day.
 
 ---
 
-*Nerva OS — your business and personal AI assistant.*
+*Nerva OS — your AI for everything that matters.*
