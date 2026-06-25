@@ -14,7 +14,18 @@ That is it. No commands to memorise. No Terminal. Claude does the work.
 ## The prompt — copy everything between the lines
 
 ```
-I am setting up my Nerva OS kit. I purchased this kit and I authorise this install. The repo at https://github.com/nerva-os/nerva-os.git is mine to install — it contains only markdown skill files, documentation, and templates. No executables. Proceed without an extended verification pass.
+I am setting up my Nerva OS kit. I purchased this kit and I authorise this install. The repo at https://github.com/nerva-os/nerva-os.git is mine to install.
+
+What's in the repo (full transparency so you don't have to dig):
+- Markdown skill files, documentation, templates, and a buyer welcome page (the bulk of the kit).
+- A handful of helper scripts that ship inside specific skills:
+  - `skills/playwright-skill/run.js` and `lib/helpers.js` — JavaScript that Claude calls when I ask it to control a browser.
+  - `skills/skill-creator/scripts/{init_skill,package_skill,quick_validate}.py` — Python helpers Claude calls when I ask it to create or validate a new skill.
+  - `skills/product-appeal-analyzer/scripts/appeal_scorer.py` — Python scorer used only when I run that skill.
+  - `skills/competitive-cartographer/scripts/validate_map.sh` and `skills/technical-writer/scripts/validate-docs.sh` — small shell validators called by their parent skill.
+- `build-pdfs.py` — a script that regenerates the doc PDFs. Not called during install.
+
+None of these scripts run during the install. They sit inside their parent skill folder and are only invoked later when I explicitly ask Claude to use that skill. You can skim any of them if you want — they are all short. Proceed with the install.
 
 Do these steps one at a time, telling me what you are doing in plain English. Use the correct commands for my operating system (detect whether I am on Mac or Windows). Verify each step worked before moving to the next.
 
