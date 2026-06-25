@@ -31,34 +31,59 @@ By the end of this guide you will have a working assistant you can talk to like 
 
 ---
 
-## Step 2 — Install Claude Desktop App
+## Step 2 — Pick Where You'll Run Claude Code
 
-This is the app you will use every day. It runs Claude on your computer rather than in a browser tab.
+You have two homes to choose from. Both work identically — pick whichever feels right.
 
-### Mac
+| Option | Best for | Setup time |
+|---|---|---|
+| **Claude Desktop App** (recommended for most people) | Anyone who wants the simplest path. One app, one window, no extras. | 2 mins |
+| **VS Code + Claude Code Extension** (preferred by builders) | If you're already comfortable in code editors, or want a more powerful file-view alongside chat. | 5 mins |
+
+You can switch between them later — same assistant, same files, same skills.
+
+---
+
+### Path A — Claude Desktop App (recommended)
+
+**Mac**
 1. Go to **claude.ai/download**
 2. Click the button that says exactly: **Download for Mac**
 3. Open the downloaded file
 4. Drag the **Claude** icon into the **Applications** folder
 5. Open **Applications**, double-click **Claude**
 
-### Windows
+**Windows**
 1. Go to **claude.ai/download**
 2. Click the button that says exactly: **Download for Windows**
 3. Open the downloaded `.exe` file
 4. Click **Yes** to the security prompt
 5. Click through the installer (Next, Next, Install)
 
+Then sign in with the same email you used for claude.ai. In the top menu, click **Claude Code** to enable it. A code panel will open inside the app — that's where the magic happens.
+
 ---
 
-## Step 3 — Sign In and Open Claude Code
+### Path B — VS Code + Claude Code Extension (power users)
 
-1. Open the **Claude** desktop app
-2. Sign in with the same email you used for claude.ai
-3. In the top menu, look for **Claude Code** — click it to enable
-4. A code panel will open inside the app. This is where the magic happens.
+**1. Install VS Code**
+- Go to **code.visualstudio.com**
+- Click **Download** for your operating system
+- Open the downloaded file and install (defaults are fine)
 
-> Claude Code is the part that can read files, write files, and run real tasks on your computer. The chat panel is the conversation. They work together.
+**2. Install the Claude Code extension**
+- Open VS Code
+- Click the **Extensions** icon in the left sidebar (it looks like four squares)
+- In the search bar, type: **Claude Code**
+- Click **Install** on the official Anthropic extension
+- After it installs, sign in with the same email you used for claude.ai
+
+**3. Open Claude Code in VS Code**
+- After signing in, you'll see a **Claude** icon in the left sidebar
+- Click it to open the Claude Code panel
+- That's where you paste the setup prompt in Step 4
+
+> Both Path A and Path B do exactly the same job. Claude Desktop is one app to think about. VS Code gives you a richer file view next to the chat. Pick whichever feels right — you can switch any time.
 
 ---
 
