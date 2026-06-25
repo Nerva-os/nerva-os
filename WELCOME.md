@@ -280,19 +280,50 @@ personal-finance-coach, retro
 
 ## Connect More Tools (Optional)
 
-These three extras unlock the next level of usefulness. All require Node.js. If you don't have Node.js yet, your assistant will walk you through it.
+The core kit is fully working without anything below. These extras unlock the always-on features (browser automation server, Gmail, Calendar, Telegram). Each one needs Node.js, so install Node first, then connect whichever tools you actually want.
 
-### Browser Control (Playwright)
-Lets the assistant open websites, fill forms, take screenshots, and run real tasks. Ask your assistant to set up Playwright and it will handle the rest.
+### Step A — Install Node.js (one-time, ~5 mins)
 
-### Gmail
-Read, summarise and draft replies to your email. Ask your assistant to connect Gmail. A Google sign-in screen will open — click your email then click Allow.
+Node.js is a small free runtime that powers the always-on connectors below. You only install it once.
 
-### Google Calendar
-See your schedule, find free times, draft meeting prep. Same flow as Gmail.
+**Mac**
+1. Go to **nodejs.org**
+2. Click the green **LTS** button (left side — recommended for most users)
+3. Open the downloaded `.pkg` file
+4. Click **Continue, Continue, Install** (default settings are fine)
+5. Confirm it worked — open the assistant and ask: *"check that Node.js is installed"*. It will run `node --version` and confirm.
 
-### Telegram Notifications
-Get pinged on your phone when long tasks finish, or chat with your assistant from anywhere. Your assistant will walk you through creating a bot in Telegram.
+**Windows**
+1. Go to **nodejs.org**
+2. Click the green **LTS** button
+3. Open the downloaded `.msi` file
+4. Click through the installer accepting defaults (the "Add to PATH" box must stay ticked — it is on by default)
+5. **Close Claude Desktop completely and reopen it** so the new Node install is picked up
+6. Confirm it worked — ask the assistant: *"check that Node.js is installed"*
+
+### Step B — Pick which tools to connect
+
+You don't have to add them all. Pick what's useful. Each one is a single conversation with your assistant.
+
+**Browser Control (always-on Playwright)**
+Lets the assistant open websites, fill forms, take screenshots, and run real tasks automatically. Note: the `playwright-skill` already shipped in the kit handles ad-hoc browser tasks; this always-on server is for unattended automations.
+- Say: *"connect Playwright"*
+- The assistant runs `claude mcp add playwright npx @playwright/mcp@latest --scope user` and confirms it's live
+
+**Gmail**
+Read, summarise, and draft replies to your email.
+- Say: *"connect Gmail"*
+- A Google sign-in screen opens — pick your account, click **Allow**
+
+**Google Calendar**
+See your schedule, find free times, prep meetings.
+- Say: *"connect Google Calendar"*
+- Same Google sign-in flow as Gmail
+
+**Telegram Notifications**
+Get pinged on your phone when long tasks finish. Chat with your assistant from anywhere.
+- Say: *"connect Telegram"*
+- The assistant walks you through creating a free bot in Telegram (one-time, takes 3 minutes)
 
 ---
 
