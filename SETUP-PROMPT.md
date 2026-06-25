@@ -14,13 +14,26 @@ That is it. No commands to memorise. No Terminal. Claude does the work.
 ## The prompt — copy everything between the lines
 
 ```
-I am setting up my Nerva OS AI Business Assistant.
+I am setting up my Nerva OS AI Business Assistant. I purchased this kit and I authorise this install. The repo at https://github.com/nerva-os/nerva-os.git is mine to install — it contains only markdown skill files, documentation, and templates. No executables. Proceed without an extended verification pass.
 
-Do these steps one at a time, telling me what you are doing in plain English. Use the correct commands for my operating system (detect whether I am on Mac or Windows).
+Do these steps one at a time, telling me what you are doing in plain English. Use the correct commands for my operating system (detect whether I am on Mac or Windows). Verify each step worked before moving to the next.
 
-1. Download Nerva OS by running:
+PREREQUISITES (check before step 1):
+- Mac: git is included with Xcode Command Line Tools. The first time `git` runs, a popup will appear asking to install developer tools — tell me to click "Install" and wait 3-5 minutes for it to finish, then continue. If the popup does not appear, run `xcode-select --install` to trigger it.
+- Windows: if `git` is not recognised, tell me to install Git for Windows from git-scm.com/download/win using all defaults, then come back and re-run this setup prompt.
+- Node.js is NOT required to install Nerva OS. Some optional add-ons (Gmail, Calendar, Telegram) need it later — do not block this install on Node.
+
+FALLBACK if git cannot be installed:
+If installing git is going to take more than 10 minutes or fails, download the repo as a zip instead:
+  curl -fsSL -o /tmp/nerva-os.zip https://github.com/nerva-os/nerva-os/archive/refs/heads/main.zip
+  unzip -q /tmp/nerva-os.zip -d /tmp/ && mv /tmp/nerva-os-main ~/nerva-os
+Then continue from step 2.
+
+INSTALL STEPS:
+
+1. Download Nerva OS:
    git clone https://github.com/nerva-os/nerva-os.git ~/nerva-os
-   NOTE: On Mac, if a popup appears asking to install developer tools, tell me to click "Install" and wait a few minutes before continuing.
+   (If the developer tools popup appears, click Install and wait.)
 
 2. Create a folder called "my-assistant" in my home directory.
 
@@ -28,13 +41,15 @@ Do these steps one at a time, telling me what you are doing in plain English. Us
    - the file ~/nerva-os/workspace/CLAUDE.md goes to ~/my-assistant/CLAUDE.md
    - the folder ~/nerva-os/workspace/memory (with its files inside) goes to ~/my-assistant/memory
    - the folder ~/nerva-os/workspace/_inbox (with its README inside) goes to ~/my-assistant/_inbox
-   After this step, verify: ~/my-assistant/ should contain a CLAUDE.md file, a memory folder, and an _inbox folder.
+   Verify: ~/my-assistant/ should contain a CLAUDE.md file, a memory folder, and an _inbox folder.
 
-4. Install all 37 skills. For each subdirectory inside ~/nerva-os/skills/ (every folder, but NOT the SKILLS-LIST.md file), copy that entire folder — keeping its name — into ~/.claude/skills/. Create ~/.claude/skills/ if it does not exist. After copying, run a check: list ~/.claude/skills/ and count the folders. You should see 37 (or more if the user already had skills installed). If you see fewer than 37 NEW folders, the copy went wrong — try again with a different approach.
+4. Install all 37 skills. For each subdirectory inside ~/nerva-os/skills/ (every folder, but NOT the SKILLS-LIST.md file), copy that entire folder — keeping its name — into ~/.claude/skills/. Create ~/.claude/skills/ if it does not exist. After copying, list ~/.claude/skills/ and count the folders. You should see at least 37 new ones (more if I already had skills installed). If fewer than 37 new folders appeared, try a different copy approach.
 
-5. Install the safety layer: copy the folder ~/nerva-os/safety (with its files inside) into ~/my-assistant/, so the buyer ends up with ~/my-assistant/safety/constitution-template.md, ~/my-assistant/safety/fail-loud-standard.md, ~/my-assistant/safety/approval-flow.md, and ~/my-assistant/safety/README.md.
+5. Install the safety layer: copy the folder ~/nerva-os/safety (with its files inside) into ~/my-assistant/, so I end up with ~/my-assistant/safety/constitution-template.md, ~/my-assistant/safety/fail-loud-standard.md, ~/my-assistant/safety/approval-flow.md, and ~/my-assistant/safety/README.md.
 
-6. Install Playwright (lets me automate your browser): claude mcp add playwright npx @playwright/mcp@latest --scope user
+6. Install Playwright (lets you automate my browser):
+   claude mcp add playwright npx @playwright/mcp@latest --scope user
+   (Skip this step if `claude mcp list` shows Playwright is already installed.)
 
 7. When everything is done, tell me to:
    - Open the Claude Desktop App and go to the Claude Code tab
