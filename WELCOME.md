@@ -151,13 +151,44 @@ INSTALL STEPS:
    - the folder ~/nerva-os/workspace/_inbox (with its README inside) goes to ~/my-assistant/_inbox
    Verify: ~/my-assistant/ should contain a CLAUDE.md file, a memory folder, and an _inbox folder.
 
-4. Install all 37 skills. For each subdirectory inside ~/nerva-os/skills/ (every folder, but NOT the SKILLS-LIST.md file), copy that entire folder — keeping its name — into ~/.claude/skills/. Create ~/.claude/skills/ if it does not exist. After copying, list ~/.claude/skills/ and count the folders. You should see at least 37 new ones (more if I already had skills installed). If fewer than 37 new folders appeared, try a different copy approach.
+4. Install all 37 skills. The macOS `cp` command has a trap here: a trailing slash on the source flattens contents into the destination instead of preserving each folder. The skill folders MUST stay intact as 37 separate directories.
+
+   Use EXACTLY this command sequence on Mac or Linux:
+   ```
+   mkdir -p ~/.claude/skills
+   cd ~/nerva-os/skills
+   for d in */; do
+     name="${d%/}"
+     cp -R "$name" ~/.claude/skills/
+   done
+   ```
+
+   On Windows (PowerShell):
+   ```
+   New-Item -ItemType Directory -Force -Path "$HOME\.claude\skills"
+   Get-ChildItem -Directory "$HOME\nerva-os\skills" | ForEach-Object {
+     Copy-Item -Recurse -Force $_.FullName "$HOME\.claude\skills\"
+   }
+   ```
+
+   After the copy, run `ls ~/.claude/skills/ | wc -l` (Mac/Linux) or `(Get-ChildItem -Directory "$HOME\.claude\skills").Count` (Windows). Confirm with me that you see the 37 expected skill folders (or more if I already had skills installed). Names should match what is in `~/nerva-os/skills/` — e.g. `ad-creative`, `agent-creator`, `first-run-setup`, `skill-creator`, `playwright-skill`, etc.
+
+   If you see flattened files (like `SKILL.md`, `references/`, `lib/`) at the top level of `~/.claude/skills/` instead of named folders, the trailing-slash bug happened — delete them and re-run the sequence above.
 
 5. Install the safety layer: copy the folder ~/nerva-os/safety (with its files inside) into ~/my-assistant/, so I end up with ~/my-assistant/safety/constitution-template.md, ~/my-assistant/safety/fail-loud-standard.md, ~/my-assistant/safety/approval-flow.md, and ~/my-assistant/safety/README.md.
 
-6. Install Playwright (lets you automate my browser):
+6. Install Playwright (OPTIONAL — adds browser automation). Skip this step if I want to move on; it can be added later.
+
+   First check whether the `claude` CLI is on PATH: run `which claude` (Mac/Linux) or `where claude` (Windows). If it returns a path, run:
+   ```
    claude mcp add playwright npx @playwright/mcp@latest --scope user
-   (Skip this step if `claude mcp list` shows Playwright is already installed.)
+   ```
+
+   If the `claude` command is NOT on PATH, do NOT spend time hunting for it. Instead, tell me Playwright was skipped and that I can add it later by either:
+   (a) typing "connect Playwright" inside the assistant once it is running, or
+   (b) opening Claude Desktop's Settings → MCP Servers and adding `playwright` with the command `npx @playwright/mcp@latest`.
+
+   The kit installs and works without Playwright. It is only needed for browser automation tasks.
 
 7. When everything is done, tell me to:
    - Open the Claude Desktop App and go to the Claude Code tab
