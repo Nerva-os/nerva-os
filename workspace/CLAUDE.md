@@ -1,5 +1,5 @@
 # Your Nerva OS Assistant
-**Built on Nerva OS — your operating system for running a business with AI.**
+**Built on Nerva OS — your business and personal AI assistant.**
 
 ---
 

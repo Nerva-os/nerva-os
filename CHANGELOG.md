@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] — 2026-06-18
 
-Initial public release of Nerva OS — your operating system for running a business with AI.
+Initial public release of Nerva OS — your business and personal AI assistant.
 
 ### Added
 

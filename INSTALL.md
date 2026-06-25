@@ -151,4 +151,4 @@ We respond within one business day.
 
 ---
 
-*Nerva OS — your operating system for running a business with AI.*
+*Nerva OS — your business and personal AI assistant.*

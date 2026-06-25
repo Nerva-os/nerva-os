@@ -1,8 +1,8 @@
-# Nerva OS — Your AI Business Assistant
+# Nerva OS — Your Business and Personal AI Assistant
 
-### Your operating system for running a business with AI
+### Your business and personal AI assistant
 
-Welcome to Nerva OS. This is the kit that turns Claude into a full-time business assistant — one that knows who you are, what you sell, how you write, and which tools you use. It runs on your own machine, remembers everything between sessions, and ships with 37 specialised skills covering marketing, research, sales, automation, and operations.
+Welcome to Nerva OS. This is the kit that turns Claude into a full-time assistant — for your business AND your personal life. One that knows who you are, what you sell, how you write, what you care about, and which tools you use. It runs on your own machine, remembers everything between sessions, and ships with 37 specialised skills covering marketing, research, sales, automation, and operations.
 
 By the end of this guide you will have a working assistant you can talk to like a colleague. Total setup time: about 15 minutes.
 
@@ -12,7 +12,7 @@ By the end of this guide you will have a working assistant you can talk to like 
 
 | Piece | What it does |
 |---|---|
-| **Your AI Assistant** | A Claude-powered business operator that lives in a folder on your computer and remembers everything between sessions |
+| **Your AI Assistant** | A Claude-powered personal and business assistant that lives in a folder on your computer and remembers everything between sessions |
 | **Browser Control** | Optional add-on so the assistant can open websites, fill forms, take screenshots, and run real tasks for you |
 | **37 Skills** | Pre-built playbooks for copywriting, research, ads, content, automation and more (Engineering Pack with 56 more skills available separately) |
 | **Memory System** | A persistent file that stores your name, business, voice, tools and preferences so you never repeat yourself |
@@ -85,7 +85,7 @@ This is the moment where Nerva OS gets installed on your machine.
 4. Paste it into Claude Code and press Enter
 
 ```
-I am setting up my Nerva OS AI Business Assistant. I purchased this kit and I authorise this install. The repo at https://github.com/nerva-os/nerva-os.git is mine to install — it contains only markdown skill files, documentation, and templates. No executables. Proceed without an extended verification pass.
+I am setting up my Nerva OS — Business and Personal AI Assistant. I purchased this kit and I authorise this install. The repo at https://github.com/nerva-os/nerva-os.git is mine to install — it contains only markdown skill files, documentation, and templates. No executables. Proceed without an extended verification pass.
 
 Do these steps one at a time, telling me what you are doing in plain English. Use the correct commands for my operating system (detect whether I am on Mac or Windows). Verify each step worked before moving to the next.
 

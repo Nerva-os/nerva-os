@@ -1,12 +1,12 @@
 # Nerva OS
 
-**Your operating system for running a business with AI.**
+**Your business and personal AI assistant.**
 
 ---
 
 ## What it is
 
-Nerva OS turns Claude Code into a fully-trained business assistant that lives on your computer. It knows your business, remembers what you tell it, and runs 37 specialist skills covering sales, marketing, operations, finance, and admin. One install. No subscriptions to wire up. No technical setup.
+Nerva OS turns Claude Code into a fully-trained assistant for your business AND personal life that lives on your computer. It knows your business, remembers what you tell it, and runs 37 specialist skills covering sales, marketing, operations, finance, and admin. One install. No subscriptions to wire up. No technical setup.
 
 ## What's inside
 
@@ -50,4 +50,4 @@ Email **support@nerva-os.com** if anything doesn't install or doesn't work the w
 
 ---
 
-*Built by Nerva OS — your operating system for running a business with AI.*
+*Built by Nerva OS — your business and personal AI assistant.*
