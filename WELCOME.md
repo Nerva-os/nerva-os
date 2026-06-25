@@ -89,22 +89,23 @@ I am setting up my Nerva OS kit. I purchased this kit and I authorise this insta
 
 Do these steps one at a time, telling me what you are doing in plain English. Use the correct commands for my operating system (detect whether I am on Mac or Windows). Verify each step worked before moving to the next.
 
+GIT IS REQUIRED — INSTALL IT FIRST. Do not skip this step. Do not use a zip workaround unless I explicitly tell you to. Git is a small, free tool that comes with macOS or Windows. The whole install depends on it.
+
 PREREQUISITES (check before step 1):
-- Mac: git is included with Xcode Command Line Tools. The first time `git` runs, a popup will appear asking to install developer tools — tell me to click "Install" and wait 3-5 minutes for it to finish, then continue. If the popup does not appear, run `xcode-select --install` to trigger it.
-- Windows: if `git` is not recognised, tell me to install Git for Windows from git-scm.com/download/win using all defaults, then come back and re-run this setup prompt.
+- Mac: run `git --version` in a terminal. If it returns a version number, git is ready — skip ahead to install step 1. If it errors OR opens a popup saying "command line developer tools are required", tell me to click the "Install" button on that popup (NOT "Get Xcode") and wait 3-5 minutes. If no popup appeared, run `xcode-select --install` to trigger it. Wait until `git --version` succeeds before continuing. This is the correct way to get git on a Mac.
+- Windows: run `git --version` in a terminal. If it errors, tell me to download Git for Windows from https://git-scm.com/download/win, install it with all defaults, close Claude Desktop, reopen it, then re-paste this setup prompt. Do not continue without git.
 - Node.js is NOT required to install Nerva OS. Some optional add-ons (Gmail, Calendar, Telegram) need it later — do not block this install on Node.
 
-FALLBACK if git cannot be installed:
-If installing git is going to take more than 10 minutes or fails, download the repo as a zip instead:
+EMERGENCY FALLBACK (use only if I tell you to):
+If I tell you I cannot install git after trying the Xcode CLT popup, only then use this fallback to download the repo as a zip:
   curl -fsSL -o /tmp/nerva-os.zip https://github.com/nerva-os/nerva-os/archive/refs/heads/main.zip
   unzip -q /tmp/nerva-os.zip -d /tmp/ && mv /tmp/nerva-os-main ~/nerva-os
-Then continue from step 2.
+Then continue from step 2. Do NOT use this fallback proactively — git is the right tool, install it.
 
 INSTALL STEPS:
 
-1. Download Nerva OS:
+1. Download Nerva OS (git is now installed from the prerequisites step):
    git clone https://github.com/nerva-os/nerva-os.git ~/nerva-os
-   (If the developer tools popup appears, click Install and wait.)
 
 2. Create a folder called "my-assistant" in my home directory.
 
