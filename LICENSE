@@ -1,0 +1,145 @@
+OPERATIONS OS — END USER LICENSE AGREEMENT
+
+Version 1.0
+Effective Date: 2026-06-18
+
+This End User License Agreement ("Agreement") is a binding contract between
+you ("Licensee") and Nerva OS ("Licensor") governing your use of the
+Nerva OS kit, including its documentation, install prompts, workspace
+template, safety layer, curated skill collection, and any associated
+materials (collectively, the "Kit").
+
+By installing, copying, or otherwise using the Kit, you agree to be bound by
+the terms of this Agreement. If you do not agree, do not install or use the
+Kit.
+
+----------------------------------------------------------------------------
+1. LICENSE GRANT
+----------------------------------------------------------------------------
+
+Subject to your payment of the applicable license fee and your continued
+compliance with this Agreement, Licensor grants you a non-exclusive,
+non-transferable, worldwide license to install and use the Kit for the
+internal business operations of one (1) single business owned or operated
+by you (the "Licensed Business").
+
+----------------------------------------------------------------------------
+2. RESTRICTIONS
+----------------------------------------------------------------------------
+
+You may NOT:
+
+  (a) redistribute, resell, sublicense, lease, rent, or otherwise transfer
+      the Kit or any portion of it to any third party;
+
+  (b) use the Kit to operate or support any business other than the
+      Licensed Business;
+
+  (c) remove, alter, or obscure any proprietary notices, branding, or
+      attribution contained within the Kit;
+
+  (d) repackage, rebrand, or republish the Kit (in whole or in part) as
+      your own product or as part of any competing product;
+
+  (e) use the install prompt, packaging structure, curation, or onboarding
+      flow as the basis for any product offered to third parties.
+
+----------------------------------------------------------------------------
+3. UPSTREAM SKILLS AND ATTRIBUTION
+----------------------------------------------------------------------------
+
+The Kit includes individual skills that originate from upstream sources
+distributed under the Apache License, Version 2.0 ("Apache 2.0 Skills").
+Each Apache 2.0 Skill retains its original license, copyright, and
+attribution as published by its upstream author. Nothing in this Agreement
+modifies or restricts the rights granted to you by those upstream licenses
+with respect to the individual Apache 2.0 Skills themselves.
+
+For clarity: the proprietary terms of this Agreement apply to the Kit as a
+whole — the packaging, curation, install pattern, safety layer, workspace
+template, branding, and documentation — and not to the underlying source
+code of any individual Apache 2.0 Skill considered in isolation.
+
+----------------------------------------------------------------------------
+4. RESERVED RIGHTS
+----------------------------------------------------------------------------
+
+Licensor retains all right, title, and interest in and to the Kit,
+including but not limited to:
+
+  - the Nerva OS name, branding, and trademarks;
+  - the curation and selection of skills bundled in the Kit;
+  - the install prompt and onboarding flow;
+  - the safety layer architecture and constitution template;
+  - the workspace template and memory structure;
+  - all documentation authored by Licensor.
+
+All rights not expressly granted to you in this Agreement are reserved by
+Licensor.
+
+----------------------------------------------------------------------------
+5. REFUND POLICY
+----------------------------------------------------------------------------
+
+If the Kit fails to install on a supported operating system (current
+versions of macOS or Windows) within thirty (30) days of your purchase
+date, and Licensor's support team is unable to resolve the issue, you may
+request a full refund by emailing support@nerva-os.com. Refunds are
+not available after thirty (30) days or after a successful install.
+
+----------------------------------------------------------------------------
+6. DISCLAIMER OF WARRANTIES
+----------------------------------------------------------------------------
+
+THE KIT IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NON-INFRINGEMENT. LICENSOR DOES NOT WARRANT THAT THE KIT WILL BE
+ERROR-FREE, UNINTERRUPTED, OR THAT IT WILL PRODUCE ANY PARTICULAR
+BUSINESS OUTCOME.
+
+----------------------------------------------------------------------------
+7. LIMITATION OF LIABILITY
+----------------------------------------------------------------------------
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
+OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS
+OPPORTUNITY, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF THE KIT,
+EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+LICENSOR'S AGGREGATE LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE
+AMOUNT YOU PAID FOR THE LICENSE.
+
+----------------------------------------------------------------------------
+8. TERMINATION
+----------------------------------------------------------------------------
+
+This Agreement is effective until terminated. Licensor may terminate this
+Agreement immediately upon written notice if you breach any term. Upon
+termination, you must cease all use of the Kit and destroy all copies in
+your possession, except where retention of upstream Apache 2.0 Skills is
+permitted by their own license terms.
+
+----------------------------------------------------------------------------
+9. GOVERNING LAW
+----------------------------------------------------------------------------
+
+This Agreement shall be governed by and construed in accordance with the
+laws of <JURISDICTION>, without regard to its conflict of laws principles.
+Any disputes arising under this Agreement shall be resolved in the courts
+of <JURISDICTION>.
+
+----------------------------------------------------------------------------
+10. ENTIRE AGREEMENT
+----------------------------------------------------------------------------
+
+This Agreement constitutes the entire agreement between you and Licensor
+regarding the Kit and supersedes all prior or contemporaneous
+understandings, communications, or agreements.
+
+----------------------------------------------------------------------------
+
+Questions about this license? Email support@nerva-os.com.
+
+Copyright (c) 2026 Nerva OS. All rights reserved.

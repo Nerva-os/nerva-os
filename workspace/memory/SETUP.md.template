@@ -1,0 +1,20 @@
+---
+setup_complete: false
+created: 2026-06-18
+---
+
+# Setup Status
+
+## Core
+- [ ] Onboarded — assistant has met me and saved my profile
+- [ ] Skills installed
+- [ ] Safety layer installed
+
+## Optional connections
+- [ ] Gmail
+- [ ] Google Calendar
+- [ ] Telegram
+- [ ] Playwright (browser automation)
+
+## Notes
+(I will update this as we go.)

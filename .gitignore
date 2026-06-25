@@ -1,0 +1,9 @@
+workspace/memory/USER.md
+workspace/memory/SETUP.md
+workspace/_inbox/*
+!workspace/_inbox/README.md
+.DS_Store
+node_modules/
+*.log
+.env
+.env.local
